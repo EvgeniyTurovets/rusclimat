@@ -82,7 +82,7 @@ smoke.prototype.update = function () {
     this.y += this.velY;
 }
 
-smokeImage.src = "../img/smoke.png";
+smokeImage.src = $('.first-canvas img').attr('src');
 smokeImage.onload = function () {
     render();
 }
