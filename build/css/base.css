@@ -10,6 +10,24 @@
   font-weight: 400;
   font-style: normal; }
 
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url("../fonts/MPLUSRounded1c-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url("../fonts/MPLUSRounded1c-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'M PLUS Rounded 1c';
+  src: url("../fonts/MPLUSRounded1c-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal; }
+
 * {
   border: 0;
   padding: 0;
@@ -258,4 +276,14 @@ input::placeholder {
 
 @media (max-width: 767px) {
   .first-ekran {
-    background-size: 1000px 100%; } }
+    background-size: 1000px 100%; }
+  .first-modal input {
+    font-size: 14px; }
+  .first-modal input::-webkit-input-placeholder {
+    font-size: 14px; }
+  .first-modal input:-ms-input-placeholder {
+    font-size: 14px; }
+  .first-modal input::-ms-input-placeholder {
+    font-size: 14px; }
+  .first-modal input::placeholder {
+    font-size: 14px; } }
