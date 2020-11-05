@@ -269,14 +269,16 @@ input::placeholder {
   .right-ventel {
     display: none; }
   .first-left-img {
-    left: -143px;
+    left: -165px;
     top: -120px;
     width: 421px;
-    height: auto; } }
+    height: auto;
+    max-height: none; } }
 
 @media (max-width: 767px) {
   .first-ekran {
-    background-size: 1000px 100%; }
+    background-size: 1000px 100%;
+    min-height: 470px; }
   .first-modal input {
     font-size: 14px; }
   .first-modal input::-webkit-input-placeholder {
