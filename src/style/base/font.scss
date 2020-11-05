@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'TT Chocolates ';
+  src: local('../fonts/TT Chocolates  Bold'), local('TT-Chocolates--Bold'),
+      url('../fonts/TTChocolates-Bold.woff2') format('woff2'),
+      url('../fonts/TTChocolates-Bold.woff') format('woff'),
+      url('../fonts/TTChocolates-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Chocolates ';
+  src: local('../fonts/TT Chocolates  Regular'), local('TT-Chocolates--Regular'),
+      url('../fonts/TTChocolates-Regular.woff2') format('woff2'),
+      url('../fonts/TTChocolates-Regular.woff') format('woff'),
+      url('../fonts/TTChocolates-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

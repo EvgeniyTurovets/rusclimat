@@ -1,0 +1,50 @@
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding-left: 0;
+}
+ol{
+    padding-left: 0;
+}
+input:focus{
+    outline: none
+}
+button:focus{
+    outline: none
+}
+textarea:focus{
+    outline: none;
+}
+body{
+    min-width: 320px;
+    font-size: 14px;
+    line-height: 1.1;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: #5b5b5b;
+    background-color: #E5E5E5;
+}
+input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance:  none;
+    color: inherit;
+    font-size: 14px;
+    line-height: 17px;
+}
+input::placeholder{
+    color: #CFCFCF;
+}
