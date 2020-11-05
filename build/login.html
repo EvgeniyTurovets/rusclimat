@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/base.min.css'>
+</head>
+<body>
+<div class="app">
+    
+    <div class="first-ekran" style="background-image: url('./img/first-fon.jpg');">
+        <img src="./img/first-img.png" class="first-left-img">
+
+        <form class="first-modal">
+            <img src="./img/logo.svg" class="first-modal__img">
+            <div class="firs-modal-t">Добро пожаловать в карьерную гонку Русклимат!</div>
+            <input placeholder="Логин">
+            <input placeholder="Пароль">
+            <span>Введите код на картинке</span>
+            <div class="vodcod-wrap">
+                <div class="vodcod-item vodcod-capcha">
+                    <img src="./img/capchatext.jpg">
+                </div>
+                <input class="vodcod-item" placeholder="|">
+            </div>
+            <button>Полетели<img src="./img/send.svg"></button>
+        </form>
+
+        <div class="right-ventel">
+            <div class="right-ventel-t">Карьерная гонка</div>
+            <img src="./img/right-ventel.png">
+            <div class="first-canvas">
+                <canvas id="canvas"></canvas>
+            </div>
+            
+            
+        </div>
+    </div>
+    
+</div>
+
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/main.min.js"></script>
+</body>
+</html>
