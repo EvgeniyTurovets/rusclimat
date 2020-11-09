@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+</head>
+<body>
+<div class="app">
+    <div class="main">
+    	<div class="burger">
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    	</div>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="лого">
+                <img src="./img/logo-text.svg">
+            </div>
+            <div class="menager-name">
+                <div class="menager-img" style="background-image: url('./img/marta.jpg');">
+                    <div class="menager-camera">
+                        <span class="icon-camera"></span>
+                    </div>
+                </div>
+                <div class="menager-name__name">Марчук Марта Олеговна </div>
+            </div>
+            <div class="menu">
+                <a href="" class="menu__item active"><span class=" icon-punkt"></span>Пункт назначения</a>
+                <a href="" class="menu__item"><span class="icon-ocenka"></span>Оценка результативности</a>
+                <a href="" class="menu__item"><span class="icon-potencial"></span>Оценка потенциала</a>
+                <a href="" class="menu__item"><span class="icon-prof"></span>Оценка проф. компетенций</a>
+                <a href="" class="menu__item"><span class="icon-sinhron"></span>Синхронный ассессмент</a>
+                <a href="" class="menu__item"><span class="icon-asingron"></span>Асинхронный ассессмент</a>
+                <a href="" class="menu__item"><span class="icon-yrmarka"></span>Ярмарка кандидатов</a>
+                <a href="" class="menu__item"><span class="icon-individual"></span>Индивидуальный план</a>
+            </div>
+            <div class="menu__bot">
+                <a href="">Выход</a>
+            </div>
+            <div class="sidebar__close">
+            	<img src="./img/closesvg.svg">
+            </div>
+        </div>
+        <div class="content">
+            <div class="main-content">
+                <div class="main-top">
+                    <div class="diagrama">
+                        <div class="menager-img big" style="background-image: url('./img/marta.jpg');">
+                            <div class="menager-camera">
+                                <span class="icon-camera"></span>
+                            </div>
+                        </div>
+                        <div class="diagrama__name">
+                            Марчук Марта Олеговна 
+                            <div class="mob-rate">
+                                <span class="mob-rate__left">100</span>
+                                <div class="mob-rate__polosa" style="width: 80%;">
+                                    <div class="mob-rate__img">
+                                        <img src="./img/polosa.svg">
+                                        <span>8</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="readout">
+                            <svg viewBox="0 0 100 100">
+                                <circle r="25" cx="50" cy="50" id="pie" />
+                            </svg>
+                            <output for="utilslider" style="display: none;">15%</output>
+                            <div class="readout-text">
+                                <div class="readout-text__top"><span class="readout-text__iz">8/</span>100</div>
+                                <div class="readout-text__bot">Место</div>
+                            </div>
+                            <input style="display: none;" type="range" min="0" max="100" value="15" id="utilslider">
+                        </div>
+                       <div class="rate">
+                           Рейтинг
+                       </div>
+                    </div>
+                    <div class="info">
+                        <div class="info__title">
+                            Общая информация
+                        </div>
+                        <div class="info__wrap">
+                            <div class="info__item">
+                                <div class="info__label">Регион текущий: </div>
+                                <div class="info__text">Ростов на дону  </div>
+                            </div>
+                            <div class="info__item slide">
+                                <div class="info__label">Выбранные для переезда регионы</div>
+                                <div class="info__text">Москва</div>
+                                <div class="info-text__wrap">
+                                    <div class="info__text">Санкт-Петербург</div>
+                                    <div class="info__text">Ростов</div>
+                                    <div class="info__text">Воронеж</div>
+                                </div>
+                               
+                                <div class="slide"><span class="icon-arrow"></span></div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__label">Текущая должность сотрудника: </div>
+                                <div class="info__text">Менеджер</div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__label">Желаемая должность:   </div>
+                                <div class="info__text">Старший менеджер</div>
+                            </div>
+                            <div class="info__item">
+                                <div class="info__label">Руководитель сотрудника: </div>
+                                <div class="info__text">Васелюк Оксана Олеговна </div>
+                            </div>
+                        </div>
+                        <img class="info-img" src="./img/info.png">
+                        <div class="info-control">
+                            <span class="icon-man"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-bot">
+                    <div class="main-bot__item">
+                        <div class="result result1">
+                            <div class="dim">
+                                <img src="./img/greydim.png" style="display: none;">
+                                <div class="dim1">
+                                    <canvas id="canvas"></canvas>
+                                </div>
+                            </div>                            
+                            <img src="./img/ventel1.png">
+                            <div class="result__text">1,5</div>
+                        </div>
+                        <div class="main-bot__text">Результативность</div>
+                    </div>
+                    <div class="main-bot__item">
+                        <div class="result result2">
+                            <img src="./img/ventel2.png">
+                            <div class="result__text">3,5</div>
+                        </div>
+                        <div class="main-bot__text">Профессиональные 
+                        компетенции</div>
+                    </div>
+                    <div class="main-bot__item">
+                        <div class="result result3">
+                            <img src="./img/ventel3.png">
+                            <div class="result__text">2,5</div>
+                        </div>
+                        <div class="main-bot__text"> Потенциал</div>
+                    </div>
+                    <div class="main-bot__item">
+                        <div class="result result4">
+                            <img src="./img/ventel2.png">
+                            <div class="result__text">3</div>
+                        </div>
+                        <div class="main-bot__text">Корпоративные 
+                        компетенции</div>
+                    </div>
+                    <div class="main-bot__item">
+                        <div class="result result5">
+                            <img src="./img/ventel4.png">
+                            <div class="result__text">4</div>
+                        </div>
+                        <div class="main-bot__text">Управленческие 
+                        компетенции</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</div>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
