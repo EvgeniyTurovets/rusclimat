@@ -581,9 +581,9 @@
     text-align: center;
     line-height: 27px;
     font-weight: 800;
-    font-size: 16px;
-    letter-spacing: -2.5px;
-    padding-right: 3px;
+    font-size: 14px;
+    letter-spacing: -0.05em;
+    padding-right: 0px;
 }
 .result1 .result__text{
     color: #D40032;
@@ -1006,4 +1006,154 @@
 	    width: 107px;
 	    background-size: 100% 100%;
 	}
+}
+
+@media(min-width: 1300px){
+    .sidebar{
+        width: 22vw;
+        padding-left: 2vw;
+        padding-top: 3vw;
+        padding-bottom: 3vw;
+    }
+    .logo img:first-child{
+        width: 4vw;
+    }
+    .logo img:last-child{
+        width: 9vw;
+    }
+    .logo{
+        margin-bottom: 2vw;
+    }
+    .menager-img {
+        height: 3vw;
+        width: 3vw;
+        margin-right: 1vw;
+    }
+    .menager-name__name{
+        font-size: 1vw;
+        max-width: 90%;
+    }
+    .menu__item{
+        font-size: 1.1vw;
+        margin-bottom: 1vw;
+    }
+    .menu__item span{
+        font-size: 1.5vw;
+    }
+    .menu__bot{
+        font-size: 1.1vw;
+    }
+    .content{
+        padding-left: 25vw;
+        padding-right: 3vw;
+    }
+    .main-content{
+        max-width: 100%;
+    }
+    .diagrama{
+        width: 22vw; 
+        height: 33vw;   
+    }
+    .menager-img.big {
+        width: 9vw;
+        height: 9vw;
+    }
+    .diagrama__name{
+        font-size: 1.3vw;
+    }
+    
+    .menager-img.big .menager-camera .icon-camera{
+        font-size: 1vw;
+    }
+    .menager-img.big:hover .menager-camera .icon-camera{
+        font-size: 1.2vw;
+    }
+    .diagrama #readout{
+        width: 8vw;
+        height: 8vw;
+    }
+    .readout-text{
+        top: 15%;
+        left: 15%;
+        bottom: 15%;
+        right: 15%;
+    }
+    .readout-text__top{
+        font-size: 1.3vw;
+        line-height: 1;
+        line-height: 3vw;
+    }
+    .readout-text__bot{
+        font-size: 1vw;
+        width: 100%;
+        line-height: 1;
+        text-align: center;
+    }
+    .readout-text__top span{
+        font-size: 2vw;
+        line-height: 2vw;
+    }
+    .diagrama .rate{
+        padding-left: 1vw;
+        font-size: 1vw;
+        background-size: 100%;
+        background-position: bottom -1vw center;
+    }
+    .info__title{
+        font-size: 2vw;
+    }
+    .info__item{
+        font-size: 1vw;
+    }
+    .info__text{
+        font-size: 1.3vw;
+        margin-bottom: 0.8vw;
+    }
+    .info__item{
+        margin-bottom: 1.5vw;
+    }
+    .info{
+        padding: 2vw;
+    }
+    .info-img{
+        width: 17vw;
+        transform: translateX(14%);
+        right: 0;
+    }
+    .result img {
+        width: 7vw;
+        height: 7vw;
+    }
+    .result{
+        width: 7vw;
+        height: 7vw;
+    }
+    .result__text {
+        width: 2.5vw;
+        height: 2.5vw;
+    }
+    .result__text{
+        font-size: 1vw;
+        line-height: 2.5vw;
+    }
+    .main-bot__text{
+        height: 4vw;
+        max-width: 90%;
+        font-size: 1vw;
+    }
+    .dim1 canvas{
+        height: 20vw!important;
+        width: 15vw;
+    }
+    .dim{
+        bottom: 2vw;
+        left: 4vw;
+        width: 6vw;
+    }
+    .menager-name{
+        margin-bottom: 2vw;
+    }
+    .dim1{
+        width: 0;
+    }
 }
