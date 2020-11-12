@@ -188,23 +188,25 @@ $(function(){
     }
     
 
-
-    function pieSlicer() {
-        var percentValue = (utilslider.value / 100) * circumference;
-              pie.style.strokeDasharray = percentValue + " " + circumference;
-                  pie.style.stroke = "hsl(0 ," + utilslider.value + "%, 50%)";
-                  percentDisplay.innerHTML = utilslider.value + "%";
+    if($('#pie').length){
+        function pieSlicer() {
+            var percentValue = (utilslider.value / 100) * circumference;
+                  pie.style.strokeDasharray = percentValue + " " + circumference;
+                      pie.style.stroke = "hsl(0 ," + utilslider.value + "%, 50%)";
+                      percentDisplay.innerHTML = utilslider.value + "%";
+        }
+          
+          var utilslider = document.getElementById("utilslider"),
+          circle = document.getElementById("pie"),
+          radius = parseInt(circle.getAttribute('r'), 10),
+          circumference = 2 * radius * Math.PI,
+          percentDisplay = document.querySelector("#readout output");
+              utilslider.addEventListener("input", 
+                  function() { pieSlicer(); }
+              )
+        pieSlicer();
     }
-      
-      var utilslider = document.getElementById("utilslider"),
-      circle = document.getElementById("pie"),
-      radius = parseInt(circle.getAttribute('r'), 10),
-      circumference = 2 * radius * Math.PI,
-      percentDisplay = document.querySelector("#readout output");
-          utilslider.addEventListener("input", 
-              function() { pieSlicer(); }
-          )
-    pieSlicer();
+    
 
     $('.info__item.slide .slide').on('click', function(){
         $(this).toggleClass('active')
@@ -220,4 +222,62 @@ $(function(){
     $('.info-control').click(function(){
         $('.info').toggleClass('active')
     })
+
+    // const element = document.getElementById('map')
+    // const panzoom = Panzoom(element, {
+    //     $zoomIn: $(".zoom-in"),
+    //     $zoomOut: $(".zoom-out"),
+    //     contain: 'inside' 
+    // });
+    
+   
+  
+    $('#map').smartZoom({
+        'containerClass':'map__wrap',
+        'maxScale' : 2,
+    });
+    $('#zoomInButton,#zoomOutButton').bind("click", zoomButtonClickHandler);
+    function zoomButtonClickHandler(e){
+        var scaleToAdd = 0.8;
+        if(e.target.id == 'zoomOutButton')
+            scaleToAdd = -scaleToAdd;
+        $('#map').smartZoom('zoom', scaleToAdd);
+    }    
+    
+    $('.punkt__select input').focus(function(){
+        $('.punkt__select').addClass('active')
+    })
+    $('.punkt__select input').blur(function(){
+        $('.punkt__select').removeClass('active')
+    })
+    $('.punkt__select .punkt__select__arr').click(function(){
+        $('.punkt__select').toggleClass('active')
+    })
+
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".punkt__select"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            $('.punkt__select').removeClass('active')
+        }
+    });
+
+    $('.vibor-btn').click(function(){
+        $('.modal-vibor').addClass('active')
+    })
+    $(document).mouseup(function (e){ // событие клика по веб-документу
+        var div = $(".modal-vibor__wrap"); // тут указываем ID элемента
+        if (!div.is(e.target) // если клик был не по нашему блоку
+            && div.has(e.target).length === 0) { // и не по его дочерним элементам
+            $('.modal-vibor').removeClass('active')
+        }
+    });
+
+    $('.vibor-delete').click(function(){
+        $(this).parent().fadeOut(200)
+        setTimeout(function(){
+            $(this).parent().remove()
+        })
+    })
+
 })

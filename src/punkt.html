@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/fancybox.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
+</head>
+<body>
+<div class="app">
+    <div class="main">
+    	<div class="burger">
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    	</div>
+        <div class="sidebar">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="лого">
+                <img src="./img/logo-text.svg">
+            </div>
+            <div class="menager-name">
+                <div class="menager-img" style="background-image: url('./img/marta.jpg');">
+                    <div class="menager-camera">
+                        <span class="icon-camera"></span>
+                    </div>
+                </div>
+                <div class="menager-name__name">Марчук Марта Олеговна </div>
+            </div>
+            <div class="menu">
+                <a href="" class="menu__item active"><span class=" icon-punkt"></span>Пункт назначения</a>
+                <a href="" class="menu__item"><span class="icon-ocenka"></span>Оценка результативности</a>
+                <a href="" class="menu__item"><span class="icon-potencial"></span>Оценка потенциала</a>
+                <a href="" class="menu__item"><span class="icon-prof"></span>Оценка проф. компетенций</a>
+                <a href="" class="menu__item"><span class="icon-sinhron"></span>Синхронный ассессмент</a>
+                <a href="" class="menu__item"><span class="icon-asingron"></span>Асинхронный ассессмент</a>
+                <a href="" class="menu__item"><span class="icon-yrmarka"></span>Ярмарка кандидатов</a>
+                <a href="" class="menu__item"><span class="icon-individual"></span>Индивидуальный план</a>
+            </div>
+            <div class="menu__bot">
+                <a href="">личный кабинет</a>
+                <a href="">Выход</a>
+            </div>
+            <div class="sidebar__close">
+            	<img src="./img/closesvg.svg">
+            </div>
+        </div>
+        <div class="content">
+            <div class="punkt">
+                <div class="punkt__top">
+                    <div class="punkt__left">
+                        <div class="title">Пункт назначения</div>
+                        <div class="punkt__select">
+                            <span class="icon-map"></span>
+                            <input placeholder="Виберете нужний город">
+                            <div class="punkt__select__arr"></div>
+                            <ul class="select-toggle">
+                                <li>Москва</li>
+                                <li>Саратов</li>
+                                <li>Город2</li>
+                                <li>Город3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="punkt__right">
+                        <button class="vibor vibor-btn"><span class="icon-vibor"></span>Выбранные пункты<div>100</div></button>
+                    </div>
+                </div>
+                <div class="punkt__top2">
+                    <div class="punkt__video">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=_sI_Ps7JSEk">
+                            <img src="./img/punkt/punkt-img.jpg">
+                        </a>
+                    </div>
+                    <p>«Профисинема» сообщил, что, в целом,<br>
+                    считает экранизацию очень удачной. по его<br>
+                    словам, единственная вещь, которую он хотел<br> бы сохранить<br>
+                    в экранизации и которая была вырезана, - это<br> сны главного героя.</p>
+                </div>
+                <div class="punk__top3">
+                    <button class="punk__top3-btn"><span class="icon-vibor"></span>Вибрать</button>
+                    <button  class="punk__top3-btn2 vibor-btn"><span class="icon-vibor"></span>Выбранные пункты</button>
+                </div>
+                <div class="map__wrap">
+                    <div id="map">
+                        <img src="./img/punkt/map.svg">
+                        <div class="metka" style="bottom: 60%; left: 29%;">Москва<span class="icon-map"></span></div>
+                    </div>
+                    <div class='positionButtonDiv'>
+                      
+                        <div id="zoomInButton" class="zoomButton" />+</div>
+                        <div id="zoomOutButton" class="zoomButton" />-</div>
+                    
+                    </div>
+
+                </div>
+                <div class="modal-vibor">
+                    <div class="modal-vibor__wrap">
+                        <img src="./img/punkt/modal.svg">
+                        <div class="modal-vibor__title">Список выбранных пунктов назначения</div>
+                        <ul>
+                            <li><div><span class="icon-map"></span>Санкт-Петербург</div><button class="vibor-delete"></button></li>
+                            <li><div><span class="icon-map"></span>Санкт-Петербург</div><button class="vibor-delete"></button></li>
+                            <li><div><span class="icon-map"></span>Санкт-Петербург</div><button class="vibor-delete"></button></li>
+                            <li><div><span class="icon-map"></span>Санкт-Петербург</div><button class="vibor-delete"></button></li>
+                            <li><div><span class="icon-map"></span>Санкт-Петербург</div><button class="vibor-delete"></button></li>
+                        </ul>
+                        <button class="modal-vibor-bnt"><span>Полетели</span><img src="./img/send.svg"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/e-smart-zoom-jquery.js"></script>
+<script src="./js/fancybox.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
