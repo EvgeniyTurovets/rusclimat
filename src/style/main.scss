@@ -218,6 +218,9 @@
     justify-content: flex-end;
     overflow: hidden;
     margin-right: 18px;
+     background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menager-camera{
@@ -256,6 +259,7 @@
 .menager-img.big{
     width: 88px;
     height: 88px;
+
     .menager-camera{
         padding: 6px 0;
     }

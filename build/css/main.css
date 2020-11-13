@@ -387,7 +387,10 @@ input::placeholder {
   -ms-flex-pack: end;
       justify-content: flex-end;
   overflow: hidden;
-  margin-right: 18px; }
+  margin-right: 18px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .menager-camera {
   background: #AEAEAE;
