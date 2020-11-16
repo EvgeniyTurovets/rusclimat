@@ -231,18 +231,20 @@ $(function(){
     // });
     
    
-  
-    $('#map').smartZoom({
-        'containerClass':'map__wrap',
-        'maxScale' : 2,
-    });
-    $('#zoomInButton,#zoomOutButton').bind("click", zoomButtonClickHandler);
-    function zoomButtonClickHandler(e){
-        var scaleToAdd = 0.8;
-        if(e.target.id == 'zoomOutButton')
-            scaleToAdd = -scaleToAdd;
-        $('#map').smartZoom('zoom', scaleToAdd);
-    }    
+    if($('#map').length){
+        $('#map').smartZoom({
+            'containerClass':'map__wrap',
+            'maxScale' : 2,
+        });
+        $('#zoomInButton,#zoomOutButton').bind("click", zoomButtonClickHandler);
+        function zoomButtonClickHandler(e){
+            var scaleToAdd = 0.8;
+            if(e.target.id == 'zoomOutButton')
+                scaleToAdd = -scaleToAdd;
+            $('#map').smartZoom('zoom', scaleToAdd);
+        }  
+    }
+      
     
     $('.punkt__select input').focus(function(){
         $('.punkt__select').addClass('active')
@@ -280,4 +282,8 @@ $(function(){
         })
     })
 
+    $('.prof-card-more').click(function(){
+        $(this).toggleClass('active')
+        $(this).parent('.prof-card__content').find('.check-more').slideToggle()
+    })
 })
