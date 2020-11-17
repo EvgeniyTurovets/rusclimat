@@ -286,4 +286,10 @@ $(function(){
         $(this).toggleClass('active')
         $(this).parent('.prof-card__content').find('.check-more').slideToggle()
     })
+
+    // ярмарка
+    $('.yrmakrka__more').click(function(){
+        $('.yrmakrka__block').toggleClass('active')
+        $('.yrmakrka__info').toggleClass('active')
+    })
 })
