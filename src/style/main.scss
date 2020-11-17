@@ -3422,25 +3422,34 @@ z-index: 1;
     color: #006FBA;
 }
 .yrmakrka__info__block1__2{
-    background: #F6F6F6;
-    box-shadow: inset 0px 3px 7px rgba(118, 118, 118, 0.25);
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    font-size: 15px;
-    /* identical to box height, or 40px */
-    color: #8D8D8D;
-    height: 35.97px;
-    padding: 0 12px;
+    position: relative;
+    input{
+        background: #F6F6F6;
+        box-shadow: inset 0px 3px 7px rgba(118, 118, 118, 0.25);
+        border-radius: 10px;
+        padding: 0 12px;
+        padding-left: 35px;
+        color: #8D8D8D;
+        height: 35.97px;
+        font-size: 15px;
+        width: 100%;
+        padding-right: 60px;
+    }
     .icon-man{
         color: #006FBA;
         font-size: 12px;
         margin-right: 10px;
+        position: absolute;
+        top: 50%;
+        left: 17px;
+        transform: translate(-50%,-50%);
     }
     .last-span{
-        flex: 1;
-        text-align: right;
         color: #006FBA;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        transform: translate(-50%, -50%);
     }
 }
 .yrmakrka__info__left{
@@ -3509,6 +3518,9 @@ z-index: 1;
     }
     .yrmakrka__ohivka .yrmakrka__ohivka__text{
         padding-left: 10px;
+    }
+    .yrmakrka__info__block1__2{
+        max-width: 300px;
     }
 }
 @media(max-width: 767px){

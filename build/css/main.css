@@ -3487,27 +3487,34 @@ input::placeholder {
   color: #006FBA; }
 
 .yrmakrka__info__block1__2 {
-  background: #F6F6F6;
-  box-shadow: inset 0px 3px 7px rgba(118, 118, 118, 0.25);
-  border-radius: 10px;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  font-size: 15px;
-  /* identical to box height, or 40px */
-  color: #8D8D8D;
-  height: 35.97px;
-  padding: 0 12px; }
+  position: relative; }
+  .yrmakrka__info__block1__2 input {
+    background: #F6F6F6;
+    box-shadow: inset 0px 3px 7px rgba(118, 118, 118, 0.25);
+    border-radius: 10px;
+    padding: 0 12px;
+    padding-left: 35px;
+    color: #8D8D8D;
+    height: 35.97px;
+    font-size: 15px;
+    width: 100%;
+    padding-right: 60px; }
   .yrmakrka__info__block1__2 .icon-man {
     color: #006FBA;
     font-size: 12px;
-    margin-right: 10px; }
+    margin-right: 10px;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
   .yrmakrka__info__block1__2 .last-span {
-    -ms-flex: 1;
-        flex: 1;
-    text-align: right;
-    color: #006FBA; }
+    color: #006FBA;
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
 
 .yrmakrka__info__left {
   -ms-flex: 0 0 291px;
@@ -3568,7 +3575,9 @@ input::placeholder {
     -ms-flex: 0 0 300px;
         flex: 0 0 300px; }
   .yrmakrka__ohivka .yrmakrka__ohivka__text {
-    padding-left: 10px; } }
+    padding-left: 10px; }
+  .yrmakrka__info__block1__2 {
+    max-width: 300px; } }
 
 @media (max-width: 767px) {
   .yrmakrka__info {
