@@ -421,3 +421,43 @@
     font-size: 12px; }
   .filter-prof__item-date {
     top: 15px; } }
+
+.yrmarka-admin button.sort {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 90%;
+  /* identical to box height, or 13px */
+  background-color: transparent;
+  color: #35AEC1;
+  margin-right: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  padding: 0 10px;
+  transition: 0.3s all; }
+  .yrmarka-admin button.sort img {
+    margin-right: 15px; }
+
+button.sort:hover {
+  background: #f6f6f6;
+  box-shadow: 0 4px 10px rgba(192, 192, 192, 0.25);
+  border-radius: 10px;
+  cursor: pointer; }
+
+.yrmarka-admin__wrap {
+  display: -ms-flexbox;
+  display: flex; }
+
+.yrmarka-admin .title {
+  padding-left: 50px; }
+
+.yrmarka-admin .employees-item.active .employees-card__author {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+
+.yrmarka-admin .employees-item.active .author-employees {
+  padding-top: 0; }
+
+.yrmarka-admin .employees-card__info .section-info {
+  margin-bottom: 15px; }
