@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*admin*/
 .modal-vibor__tag {
   display: -ms-flexbox;
@@ -263,3 +264,160 @@
       margin-bottom: 15px; }
   .modal-vibor__wrap2 .venteli .yrmakrka__ventel__item {
     width: calc(100% / 2); } }
+
+.employees-item {
+  position: relative; }
+
+/*//лидер*/
+.employees-item__more {
+  width: 10px;
+  height: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 3;
+  color: #000;
+  font-size: 8px;
+  cursor: pointer; }
+
+.employees-item__wrap {
+  display: none;
+  position: relative; }
+
+.employees-item.active .employees-item__wrap {
+  display: block; }
+
+.section-info.hide {
+  display: none; }
+
+.employees-item.active:before {
+  content: "";
+  display: block;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
+  width: calc(100% - 10px);
+  left: 0;
+  height: calc(100% - 146px);
+  top: 146px;
+  border-radius: 0 0 15px 15px; }
+
+.yrmakrka__info__block1 {
+  display: none; }
+
+.employees-item.active {
+  overflow: hidden; }
+  .employees-item.active .employees-card:before {
+    background: url(../img/employees-bg_r_active2.png) 0 0 no-repeat;
+    top: 0; }
+  .employees-item.active .employees-card:after {
+    height: 147px;
+    border-radius: 15px 0 0 0;
+    box-shadow: none; }
+  .employees-item.active .employees-card {
+    position: initial; }
+  .employees-item.active .employees-item__more {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg); }
+  .employees-item.active .yrmakrka__info__block1 {
+    margin-top: 15px;
+    display: block;
+    width: 100%; }
+  .employees-item.active .employees-card__author {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .employees-item.active .section-info.hide {
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px; }
+  .employees-item.active .author-employees {
+    padding-top: 20px; }
+  .employees-item.active .employees-card__inner {
+    position: relative; }
+  .employees-item.active .yrmakrka__info__block1__2 {
+    background: #F6F6F6;
+    box-shadow: inset 0px 3px 7px rgba(118, 118, 118, 0.25);
+    border-radius: 10px;
+    max-width: 291.31px;
+    height: 35.97px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 267.2%;
+    /* identical to box height, or 40px */
+    color: #8D8D8D; }
+
+@media (max-width: 767px) {
+  .employees-row {
+    margin-right: -10px; }
+  .employees-item.active .employees-card__info .section-info__item {
+    display: block; }
+  .employees-item.active .employees-card__inner {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .employees-item.active .author-employees {
+    width: 100%; }
+  .employees-item.active .employees-card__content {
+    padding-right: 0; }
+  .employees-item.active .employees-card__info .section-info {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    margin: 0; }
+  .employees-item.active .section-info__item {
+    margin-bottom: 15px; }
+  .filter-prof__item .punkt__select {
+    max-width: 100%; } }
+
+.filter-prof--two .filter-prof__item {
+  -ms-flex-positive: 0;
+      flex-grow: 0; }
+
+.filter-prof__item-date {
+  -ms-flex-positive: 1;
+      flex-grow: 1; }
+
+/*assesor*/
+.assesor .leader-section {
+  min-height: 136px; }
+
+@media (max-width: 767px) {
+  .filter-prof__item-date {
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 11px;
+    z-index: 12; }
+  .title-lg-section {
+    font-size: 14px; }
+  .heading-section {
+    left: 63px;
+    top: 1px; }
+  .date-wrap__count {
+    font-size: 14px; }
+  .date-wrap {
+    padding-left: 22px; }
+  .author-employees {
+    -ms-flex-preferred-size: 55%;
+        flex-basis: 55%; } }
+
+@media (max-width: 374px) {
+  .date-wrap:after {
+    display: none; }
+  .date-wrap {
+    text-align: right; }
+  .date-wrap__count {
+    font-size: 12px; }
+  .filter-prof__item-date {
+    top: 15px; } }

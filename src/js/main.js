@@ -247,13 +247,13 @@ $(function(){
       
     
     $('.punkt__select input').focus(function(){
-        $('.punkt__select').addClass('active')
+        $(this).closest('.punkt__select').addClass('active')
     })
     $('.punkt__select input').blur(function(){
         $('.punkt__select').removeClass('active')
     })
     $('.punkt__select .punkt__select__arr').click(function(){
-        $('.punkt__select').toggleClass('active')
+        $(this).closest('.punkt__select').toggleClass('active')
     })
 
     $(document).mouseup(function (e){ // событие клика по веб-документу
@@ -301,6 +301,10 @@ $(function(){
     //админ
     $('.admin-punk__li__right button').click(function(){
         $('.modal-vibor.admin').addClass('twomodal')
+    })
+
+    $('.employees-item__more').click(function(){
+        $(this).closest('.employees-item').toggleClass('active')
     })
 
 })

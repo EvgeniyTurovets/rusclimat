@@ -2117,9 +2117,7 @@ input::placeholder {
     .filter-prof__item .punkt__select {
       margin: 0; }
     .filter-prof__item--lg {
-      min-width: 265px;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
+      min-width: 265px; }
     .filter-prof__item .punkt__select input {
       width: 100%; }
   .filter-prof__item-btn {
@@ -3561,16 +3559,10 @@ input::placeholder {
     font-size: 13px; } }
 
 @media (max-width: 1023px) {
-  .yrmakrka__top {
-    margin-bottom: 15px; }
   .yrmakrka__man {
     background: #f6f6f6;
     box-shadow: 0 4px 10px rgba(192, 192, 192, 0.25);
     border-radius: 10px; }
-  .yrmakrka__top {
-    -ms-flex-pack: end;
-        justify-content: flex-end;
-    padding-right: 5px; }
   .yrmakrka__ohivka .yrmakrka__ohivka__right {
     -ms-flex: 0 0 300px;
         flex: 0 0 300px; }
@@ -3578,6 +3570,14 @@ input::placeholder {
     padding-left: 10px; }
   .yrmakrka__info__block1__2 {
     max-width: 300px; } }
+
+@media (max-width: 991px) {
+  .yrmakrka__top {
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+    padding-right: 5px; }
+  .yrmakrka__top {
+    margin-bottom: 15px; } }
 
 @media (max-width: 767px) {
   .yrmakrka__info {

@@ -1994,7 +1994,7 @@ color: #626262;
         }
         &--lg{
             min-width: 265px;
-            flex-grow: 1;
+            
         }
         .punkt__select{
             input{
@@ -3501,18 +3501,13 @@ z-index: 1;
     }
 }
 @media(max-width: 1023px){
-    .yrmakrka__top{
-        margin-bottom: 15px;
-    }
+    
     .yrmakrka__man{
         background: #f6f6f6;
         box-shadow: 0 4px 10px rgba(192,192,192,.25);
         border-radius: 10px;
     }
-    .yrmakrka__top{
-        justify-content: flex-end;
-        padding-right: 5px;
-    }
+    
     .yrmakrka__ohivka .yrmakrka__ohivka__right{
         flex: 0 0 300px;
     }
@@ -3521,6 +3516,15 @@ z-index: 1;
     }
     .yrmakrka__info__block1__2{
         max-width: 300px;
+    }
+}
+@media(max-width: 991px){
+    .yrmakrka__top{
+        justify-content: flex-end;
+        padding-right: 5px;
+    }
+    .yrmakrka__top{
+        margin-bottom: 15px;
     }
 }
 @media(max-width: 767px){
