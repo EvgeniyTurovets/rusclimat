@@ -275,6 +275,10 @@ $(function(){
         }
     });
 
+    $('.modal-close').click(function(){
+        $(this).closest('.modal-vibor').removeClass('active')
+    })
+
     $('.vibor-delete').click(function(){
         $(this).parent().fadeOut(200)
         setTimeout(function(){
@@ -292,4 +296,11 @@ $(function(){
         $('.yrmakrka__block').toggleClass('active')
         $('.yrmakrka__info').toggleClass('active')
     })
+
+
+    //админ
+    $('.admin-punk__li__right button').click(function(){
+        $('.modal-vibor.admin').addClass('twomodal')
+    })
+
 })
