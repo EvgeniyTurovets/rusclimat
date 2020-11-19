@@ -311,4 +311,12 @@ $(function(){
         $('.yrmakrka__filter').slideToggle()
     })
    
+
+    $('.yr__item .icon-arrow').click(function(){
+        $(this).closest('.yr__item').toggleClass('active')
+    })
+
+    $('.comment__btn').click(function(){
+        $(this).closest('.comment').toggleClass('active').find('.comment__wrap').slideToggle()
+    })
 })
