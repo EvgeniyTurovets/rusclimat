@@ -306,5 +306,9 @@ $(function(){
     $('.employees-item__more').click(function(){
         $(this).closest('.employees-item').toggleClass('active')
     })
-
+    
+    $('.sort').click(function(){
+        $('.yrmakrka__filter').slideToggle()
+    })
+   
 })

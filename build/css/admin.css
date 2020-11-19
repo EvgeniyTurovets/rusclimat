@@ -461,3 +461,225 @@ button.sort:hover {
 
 .yrmarka-admin .employees-card__info .section-info {
   margin-bottom: 15px; }
+
+.yrmarka-admin .edit-btn span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1;
+  color: #006FBA;
+  padding-bottom: 3px; }
+
+.yrmarka-admin .yrmakrka__man {
+  position: relative;
+  position: relative; }
+
+.yrmarka-admin .yrmakrka__man .count {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+  background: #4BCFE4;
+  border-radius: 100%;
+  font-size: 10px;
+  line-height: 267.2%;
+  /* identical to box height, or 27px */
+  color: #FFFFFF;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  font-weight: 700;
+  text-align: center; }
+
+@media (max-width: 991px) {
+  .yrmarka-admin .title {
+    padding-left: 80px; } }
+
+@media (max-width: 767px) {
+  .yrmarka-admin__wrap {
+    width: 100%;
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    -ms-flex-align: start;
+        align-items: flex-start; }
+    .yrmarka-admin__wrap a {
+      margin-bottom: 15px; } }
+
+.yrmarka-admin .yrmakrka__top {
+  margin-bottom: 15px; }
+
+.yrmakrka__filter {
+  display: none; }
+
+.yrmakrka__filter a {
+  margin: 0 10px;
+  box-shadow: 0px 4px 10px rgba(192, 192, 192, 0.5);
+  border-radius: 10px;
+  min-width: 189px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #35AEC1;
+  padding: 10px 15px;
+  transition: 0.3s all;
+  display: inline-block;
+  background-color: #ececec; }
+
+.yrmakrka__filter a:hover {
+  background-color: #fff; }
+
+@media (max-width: 767px) {
+  .yrmakrka__filter {
+    margin: 0 -10px; }
+  .yrmakrka__filter a {
+    min-width: initial;
+    width: calc(100% / 2 - 20px); } }
+
+@media (max-width: 559px) {
+  .yrmakrka__filter a {
+    width: calc(100% - 20px); }
+  .yrmarka-admin button.sort:hover {
+    padding: 10px 10px; } }
+
+.yrmarka-admin.canditadov .author-employees {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.yrmarka-admin.canditadov .author-employees__name {
+  width: 100%; }
+
+.yrmarka-admin.canditadov .employees-card__inner {
+  min-height: 140px; }
+
+.yrmarka-admin.canditadov .employees-card__info .section-info {
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.yrmarka-admin.canditadov .employees-card__info .section-info__item {
+  width: auto;
+  margin-left: 15px; }
+
+.yrmarka-admin.canditadov .employees-card:before {
+  background: url("../img/yarmarka/yrcand.png") 0 0 no-repeat;
+  height: 140px;
+  top: -1px; }
+
+.yrmarka-admin.canditadov .employees-card {
+  min-height: 139px; }
+
+.yrmarka-admin.canditadov .yrmakrka__ventel__img img {
+  height: 50px;
+  width: 50px; }
+
+.yrmarka-admin.canditadov .yrmakrka__ventel__img {
+  height: 50px;
+  width: 50px; }
+
+.yrmarka-admin.canditadov .yrmakrka__ventel__text {
+  font-size: 10px;
+  height: 20px;
+  margin-top: 5px; }
+
+.yrmarka-admin.canditadov .yrmakrka__ventel {
+  height: 85px;
+  margin: 0; }
+
+.yrmarka-admin.canditadov .edit-btn {
+  top: 53px;
+  right: -19px; }
+
+.yrmarka-admin.canditadov .author-employees {
+  min-width: 276px;
+  max-width: 276px;
+  height: auto; }
+
+.yrmarka-admin.canditadov .yrmakrka__ventel {
+  max-width: 700px; }
+
+.canditadov__wrap {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 276px;
+  font-size: 12px;
+  /* or 358% */
+  color: #A3A3A3; }
+  .canditadov__wrap div {
+    margin-left: 15px;
+    margin-bottom: 12px; }
+
+@media (max-width: 1279px) {
+  .yrmarka-admin.canditadov {
+    zoom: 0.7; } }
+
+@media (max-width: 991px) {
+  .yrmarka-admin.canditadov {
+    zoom: 1; }
+  .yrmarka-admin.canditadov .employees-card__inner {
+    position: relative;
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .yrmarka-admin.canditadov .employees-card:before {
+    background: url("../img/employees-bg_r_active2.png") 0 0 no-repeat;
+    top: 0; }
+  .yrmarka-admin.canditadov .author-employees {
+    max-width: initial;
+    min-width: initial;
+    width: 100%;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    min-height: initial;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .yrmarka-admin.canditadov .author-employees__name {
+    padding: 0 20px; }
+  .yrmarka-admin.canditadov .employees-item:before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    z-index: -1;
+    width: calc(100% - 10px);
+    left: 0;
+    height: calc(100% - 140px);
+    top: 140px;
+    border-radius: 0 0 15px 15px; }
+  .yrmarka-admin.canditadov .employees-card:after {
+    height: 140px;
+    border-radius: 15px 0 0 0;
+    box-shadow: none; }
+  .yrmarka-admin.canditadov .employees-card {
+    min-height: initial; }
+  .yrmarka-admin.canditadov .yrmakrka__ventel {
+    height: auto;
+    padding: 0;
+    margin-top: 20px; }
+  .yrmarka-admin.canditadov .employees-card__content {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  .yrmarka-admin.canditadov .section-info .section-info__item {
+    display: block;
+    width: 50%;
+    margin-left: 0;
+    margin-bottom: 15px; }
+  .yrmarka-admin.canditadov .section-info {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 10px; }
+  .yrmarka-admin.canditadov .edit-btn {
+    top: 46px;
+    right: -2px; }
+  .yrmarka-admin.canditadov .employees-card__content {
+    padding: 0; }
+  .yrmarka-admin.canditadov .yrmakrka__ventel__text {
+    max-width: 130px; }
+  .canditadov__wrap {
+    display: none; } }

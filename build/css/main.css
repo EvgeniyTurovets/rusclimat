@@ -3561,10 +3561,11 @@ input::placeholder {
     font-size: 13px; } }
 
 @media (max-width: 1023px) {
-  .yrmakrka__man {
-    background: #f6f6f6;
-    box-shadow: 0 4px 10px rgba(192, 192, 192, 0.25);
-    border-radius: 10px; }
+  /*.yrmakrka__man{
+        background: #f6f6f6;
+        box-shadow: 0 4px 10px rgba(192,192,192,.25);
+        border-radius: 10px;
+    }*/
   .yrmakrka__ohivka .yrmakrka__ohivka__right {
     -ms-flex: 0 0 300px;
         flex: 0 0 300px; }

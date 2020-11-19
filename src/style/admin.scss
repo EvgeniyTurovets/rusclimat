@@ -495,3 +495,249 @@ button.sort:hover{
 .yrmarka-admin .employees-card__info .section-info{
 	margin-bottom: 15px;
 }
+.yrmarka-admin{
+	.edit-btn span{
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 1;
+		color: #006FBA;
+		padding-bottom: 3px;
+	}
+	.yrmakrka__man{
+		position: relative;
+		position: relative;
+	}
+	.yrmakrka__man .count{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 25px;
+		height: 25px;
+		transform: translate(50%, -50%);
+		background: #4BCFE4;
+		border-radius: 100%;
+		font-size: 10px;
+		line-height: 267.2%;
+		/* identical to box height, or 27px */
+		color: #FFFFFF;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-weight: 700;
+		text-align: center;
+	}
+}
+@media(max-width: 991px){
+	.yrmarka-admin .title{
+		padding-left: 80px;
+	}
+}
+@media(max-width: 767px){
+	.yrmarka-admin__wrap{
+		width: 100%;
+		flex-direction: column-reverse;
+		align-items: flex-start;
+		a{
+			margin-bottom: 15px;
+		}
+	}
+	
+}
+
+.yrmarka-admin .yrmakrka__top{
+	margin-bottom: 15px;
+}
+.yrmakrka__filter{
+	display: none;
+}
+
+.yrmakrka__filter a{
+	margin: 0 10px;
+	box-shadow: 0px 4px 10px rgba(192, 192, 192, 0.5);
+	border-radius: 10px;
+	min-width: 189px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: #35AEC1;
+	padding: 10px 15px;
+	transition: 0.3s all;
+	display: inline-block;
+	background-color: #ececec;
+}
+.yrmakrka__filter a:hover{
+	background-color: #fff;
+}
+@media(max-width: 767px){
+	.yrmakrka__filter{
+		margin: 0 -10px;
+	}
+	.yrmakrka__filter a{
+		min-width: initial;
+		width: calc(100% / 2 - 20px);
+	}
+}
+@media(max-width: 559px){
+	.yrmakrka__filter a{
+		width: calc(100% - 20px);
+	}
+	.yrmarka-admin button.sort:hover{
+		padding: 10px 10px;
+	}
+}
+
+.yrmarka-admin.canditadov{
+	.author-employees{
+		flex-basis: 25%;
+		flex-wrap: wrap;
+	}
+	.author-employees__name{
+		width: 100%;
+	}
+	.employees-card__inner{
+		min-height: 140px;
+	}
+	.employees-card__info .section-info{
+		justify-content: flex-start;
+	}
+	.employees-card__info .section-info__item{
+		width: auto;
+		margin-left: 15px;
+	}
+	.employees-card:before{
+		background: url('../img/yarmarka/yrcand.png') 0 0 no-repeat;
+		height: 140px;
+		top: -1px;
+	}
+	.employees-card{
+		min-height: 139px;
+	}
+	.yrmakrka__ventel__img img{
+		height: 50px;
+		width: 50px;
+	}
+	.yrmakrka__ventel__img{
+		height: 50px;
+		width: 50px;
+	}
+	.yrmakrka__ventel__text{
+		font-size: 10px;
+		height: 20px;
+		margin-top: 5px;
+	}
+	.yrmakrka__ventel{
+		height: 85px;
+		margin: 0;
+	}
+	.edit-btn{
+		top: 53px;
+    	right: -19px;
+	}
+	.author-employees{
+		min-width: 276px;
+		max-width: 276px;
+		height: auto;
+	}
+	.yrmakrka__ventel{
+		max-width: 700px;
+	}
+}
+.canditadov__wrap{
+	display: flex;
+	padding-left: 276px;
+	font-size: 12px;
+	/* or 358% */
+	color: #A3A3A3;
+	div{
+		margin-left: 15px;
+		margin-bottom: 12px;
+	}
+}
+
+@media(max-width: 1279px){
+	.yrmarka-admin.canditadov{
+		zoom: 0.7;
+	}
+}
+@media(max-width: 991px){
+	.yrmarka-admin.canditadov{
+		zoom: 1;
+	}
+	.yrmarka-admin.canditadov{
+		.employees-card__inner{
+			position: relative;
+			flex-direction: column;
+		}
+		
+		.employees-card:before {
+		    background: url('../img/employees-bg_r_active2.png') 0 0 no-repeat;
+		    top: 0;
+		}
+		.author-employees{
+			max-width: initial;
+			min-width: initial;
+			width: 100%;
+			flex-wrap: nowrap;
+			min-height: initial;
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+		.author-employees__name{
+			padding: 0 20px;
+		}
+		.employees-item:before {
+		    content: "";
+		    display: block;
+		    background-color: #fff;
+		    position: absolute;
+		    z-index: -1;
+		    width: calc(100% - 10px);
+		    left: 0;
+		    height: calc(100% - 140px);
+		    top: 140px;
+		    border-radius: 0 0 15px 15px;
+		}
+		.employees-card:after{
+			height: 140px;
+			border-radius: 15px 0 0 0;
+			box-shadow: none;
+		}
+	
+		.employees-card{
+			min-height: initial;
+			
+		}
+		.yrmakrka__ventel{
+			height: auto;
+			padding: 0;
+			margin-top: 20px;
+		}
+		.employees-card__content{
+			flex-direction: column;
+		}
+		.section-info .section-info__item{
+			display: block;
+			width: 50%;
+			margin-left: 0;
+			margin-bottom: 15px;
+		}
+		.section-info{
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0;
+			padding: 10px;
+		}
+		.edit-btn {
+		    top: 46px;
+		    right: -2px;
+		}
+		.employees-card__content{
+			padding: 0;
+		}
+		.yrmakrka__ventel__text {
+			max-width: 130px;
+		}
+	}
+	.canditadov__wrap{
+		display: none;
+	}
+}

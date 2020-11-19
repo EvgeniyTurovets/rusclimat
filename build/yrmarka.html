@@ -5,8 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Руководитель</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
-    <link rel='stylesheet' type='text/css' media='screen' href='./css/admin.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css?v=42137653b4de7184e3cf2e0b66da05fd'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./css/admin.min.css?v=42137653b4de7184e3cf2e0b66da05fd'>
 </head>
 <body>
 <div class="app">
@@ -49,16 +49,425 @@
                     <div class="title big">Ярмарка</div>
                     <div class="yrmarka-admin__wrap">
                         <button class="sort"><img src="./img/yarmarka/yrmarka.svg">Сортировать сотрудников</button>
-                        <a href="" class="yrmakrka__man"><span class="icon-add-user"></span>Отобранные сотрудники</a>
+                        <a href="" class="yrmakrka__man">
+                            <span class="icon-add-user"></span>Отобранные сотрудники
+                            <span class="count">100</span>
+                        </a>
                     </div>
-                    
+                </div>
+                <div class="yrmakrka__filter">
+                    <a href="">Город</a>
+                    <a href="">Дата начала оценки</a>
+                    <a href="">Дата окончания оценки</a>
+                    <a href="">Текущий модуль </a>
+                    <a href="">Потенциал</a>
                 </div>
                 <div class="employees-row">
                     <div class="employees-item">
                         <div class="employees-item__more"><span class="icon-arrow"></span></div>
                         <div class="employees-card">
                             <div class="employees-card__inner">
-                                <a href="" class="edit-btn"><span class="pencil-icon"></span></a>
+                                <a href="" class="edit-btn"><span>+</span></a>
+                                <div class="employees-card__author author-employees">
+                                    <div class="author-employees__img">
+                                        <div class="menager-img" style="background-image: url('./img/marta.jpg');">
+                                            <div class="menager-camera">
+                                                <span class="icon-camera"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="author-employees__content">
+                                        <div class="author-employees__name">Марчук Марта Олеговна </div>
+                                        <div class="place-col">
+                                            <div class="place-col__numer"><b>8/</b>100</div>
+                                            <div class="place-col__label">Место</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="employees-card__content">
+                                    <div class="employees-card__info">
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Регион текущий:</div>
+                                                <div class="section-info__name">Ростов на дону</div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Выбраный для переезда регион</div>
+                                                <div class="section-info__name">Москва</div>
+                                            </div>
+                                        </div>
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата начала оценки:</div>
+                                                <div class="section-info__name">11.03.2020 </div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата окончания оценки</div>
+                                                <div class="section-info__name">20.10.2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employees-item__wrap">
+                            <div class="yrmakrka__ventel">
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Корпоративные компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Потенциал
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                       Управленческие 
+                                        компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Результативность
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Профессиональные  компетенции
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employees-item">
+                        <div class="employees-item__more"><span class="icon-arrow"></span></div>
+                        <div class="employees-card">
+                            <div class="employees-card__inner">
+                                <a href="" class="edit-btn"><span>+</span></a>
+                                <div class="employees-card__author author-employees">
+                                    <div class="author-employees__img">
+                                        <div class="menager-img" style="background-image: url('./img/marta.jpg');">
+                                            <div class="menager-camera">
+                                                <span class="icon-camera"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="author-employees__content">
+                                        <div class="author-employees__name">Марчук Марта Олеговна </div>
+                                        <div class="place-col">
+                                            <div class="place-col__numer"><b>8/</b>100</div>
+                                            <div class="place-col__label">Место</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="employees-card__content">
+                                    <div class="employees-card__info">
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Регион текущий:</div>
+                                                <div class="section-info__name">Ростов на дону</div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Выбраный для переезда регион</div>
+                                                <div class="section-info__name">Москва</div>
+                                            </div>
+                                        </div>
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата начала оценки:</div>
+                                                <div class="section-info__name">11.03.2020 </div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата окончания оценки</div>
+                                                <div class="section-info__name">20.10.2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employees-item__wrap">
+                            <div class="yrmakrka__ventel">
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Корпоративные компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Потенциал
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                       Управленческие 
+                                        компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Результативность
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Профессиональные  компетенции
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employees-item">
+                        <div class="employees-item__more"><span class="icon-arrow"></span></div>
+                        <div class="employees-card">
+                            <div class="employees-card__inner">
+                                <a href="" class="edit-btn"><span>+</span></a>
+                                <div class="employees-card__author author-employees">
+                                    <div class="author-employees__img">
+                                        <div class="menager-img" style="background-image: url('./img/marta.jpg');">
+                                            <div class="menager-camera">
+                                                <span class="icon-camera"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="author-employees__content">
+                                        <div class="author-employees__name">Марчук Марта Олеговна </div>
+                                        <div class="place-col">
+                                            <div class="place-col__numer"><b>8/</b>100</div>
+                                            <div class="place-col__label">Место</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="employees-card__content">
+                                    <div class="employees-card__info">
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Регион текущий:</div>
+                                                <div class="section-info__name">Ростов на дону</div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Выбраный для переезда регион</div>
+                                                <div class="section-info__name">Москва</div>
+                                            </div>
+                                        </div>
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата начала оценки:</div>
+                                                <div class="section-info__name">11.03.2020 </div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата окончания оценки</div>
+                                                <div class="section-info__name">20.10.2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employees-item__wrap">
+                            <div class="yrmakrka__ventel">
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Корпоративные компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Потенциал
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                       Управленческие 
+                                        компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Результативность
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Профессиональные  компетенции
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employees-item">
+                        <div class="employees-item__more"><span class="icon-arrow"></span></div>
+                        <div class="employees-card">
+                            <div class="employees-card__inner">
+                                <a href="" class="edit-btn"><span>+</span></a>
+                                <div class="employees-card__author author-employees">
+                                    <div class="author-employees__img">
+                                        <div class="menager-img" style="background-image: url('./img/marta.jpg');">
+                                            <div class="menager-camera">
+                                                <span class="icon-camera"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="author-employees__content">
+                                        <div class="author-employees__name">Марчук Марта Олеговна </div>
+                                        <div class="place-col">
+                                            <div class="place-col__numer"><b>8/</b>100</div>
+                                            <div class="place-col__label">Место</div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="employees-card__content">
+                                    <div class="employees-card__info">
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Регион текущий:</div>
+                                                <div class="section-info__name">Ростов на дону</div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Выбраный для переезда регион</div>
+                                                <div class="section-info__name">Москва</div>
+                                            </div>
+                                        </div>
+                                        <div class="section-info">
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата начала оценки:</div>
+                                                <div class="section-info__name">11.03.2020 </div>
+                                            </div>
+                                            <div class="section-info__item">
+                                                <div class="section-info__caption">Дата окончания оценки</div>
+                                                <div class="section-info__name">20.10.2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employees-item__wrap">
+                            <div class="yrmakrka__ventel">
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Корпоративные компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Потенциал
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                       Управленческие 
+                                        компетенции
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Результативность
+                                    </div>
+                                </div>
+                                <div class="yrmakrka__ventel__item">
+                                    <div class="yrmakrka__ventel__img">
+                                        <img src="./img/ventel4.png">
+                                        <span style="color: #36AFC2;">4</span>
+                                    </div>
+                                    <div class="yrmakrka__ventel__text">
+                                        Профессиональные  компетенции
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="employees-item">
+                        <div class="employees-item__more"><span class="icon-arrow"></span></div>
+                        <div class="employees-card">
+                            <div class="employees-card__inner">
+                                <a href="" class="edit-btn"><span>+</span></a>
                                 <div class="employees-card__author author-employees">
                                     <div class="author-employees__img">
                                         <div class="menager-img" style="background-image: url('./img/marta.jpg');">
@@ -160,9 +569,9 @@
     </div>
     
 </div>
-<script src="./js/jquery-3.2.1.min.js"></script>
-<script src="./js/e-smart-zoom-jquery.js"></script>
-<script src="./js/fancybox.min.js"></script>
-<script src="./js/main.js"></script>
+<script src="./js/jquery-3.2.1.min.js?v=42137653b4de7184e3cf2e0b66da05fd"></script>
+<script src="./js/e-smart-zoom-jquery.js?v=42137653b4de7184e3cf2e0b66da05fd"></script>
+<script src="./js/fancybox.min.js?v=42137653b4de7184e3cf2e0b66da05fd"></script>
+<script src="./js/main.js?v=42137653b4de7184e3cf2e0b66da05fd"></script>
 </body>
 </html>
