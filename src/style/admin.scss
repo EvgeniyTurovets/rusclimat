@@ -1079,3 +1079,39 @@ button.sort:hover{
 		width: 50%;
 	}
 }
+
+
+.yrmakrka__back{
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 267.2%;
+	/* identical to box height, or 40px */
+	display: flex;
+	align-items: center;
+	color: #006FBA;
+	margin-left: 30px;
+}
+.yrmakrka__back span{
+	margin-right: 10px;
+	background: #FFFFFF;
+	width: 25px;
+	display: block;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 25px;
+	box-shadow: 0px 2px 6px rgba(35, 31, 87, 0.25);
+	transform: rotate(-90deg);
+	font-size: 8px;
+	color: #006FBA;
+}
+
+@media(max-width: 767px){
+	.yrmakrka__back{
+		position: absolute;
+		z-index: 5;
+		right: 20px;
+		top: 20px;
+	}
+}
