@@ -556,7 +556,7 @@
     position: relative;
     border-radius: 100%;
 }
-.result1{
+.result.result1{
     background: rgba(212, 0, 50, 0.6);
      border: 3px solid #f3db00;
     
@@ -594,21 +594,21 @@
 .result1 .result__text{
     color: #D40032;
 }
-.result2{
+.result.result2{
     background:#03C47F;
     border: 3px solid #006FBA;
 }
 .result2 .result__text{
     color: #006FBA;
 }   
-.result3{
+.result.result3{
     background:#03C47F;
     border: 3px solid #03C47F;
 }
 .result3 .result__text{
     color: #03C47F;
 }   
-.result4{
+.result.result4{
     background:#03C47F;
 }
 .result4 .result__text{
@@ -653,7 +653,7 @@
 }
 .dim{
     position: absolute;
-    bottom: 25px;
+    bottom: 80%;
     left: 63px;
     height: 0;
     width: 78px;
@@ -1151,7 +1151,7 @@
         width: 15vw;
     }
     .dim{
-        bottom: 2vw;
+        /*bottom: 2vw;*/
         left: 4vw;
         width: 6vw;
     }
@@ -2114,20 +2114,25 @@ z-index: 1;
     background-size: contain;
     border-radius: 50%;
     overflow: hidden;
+    img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+    }
     &--blue{
-        background-image: url('../img/ventel-blue.svg');
+        /*background-image: url('../img/ventel-blue.svg');*/
         color: #36AFC2;
     }
     &--green{
-        background-image: url('../img/ventel-green.svg');
+        /*background-image: url('../img/ventel-green.svg');*/
         color:#03C47F;
     }
     &--yellow{
-        background-image: url('../img/ventel-yellow.svg');
+        /*background-image: url('../img/ventel-yellow.svg');*/
         color:#03C47F;
     }
     &--red{
-        background-image: url('../img/ventel-red.svg');
+        /*background-image: url('../img/ventel-red.svg');*/
         color: #D40032;
     }
     &__number{
@@ -2790,13 +2795,14 @@ z-index: 1;
     position: relative;
 }
 .pot__bot__img img{
-    
+    border-radius: 100%;
     width: 100%;
     height: 100%;
 }
 .pot__bot__img div{
     position: absolute;
     height: 35px;
+    z-index: 1;
     width: 35px;
     display: flex;
     justify-content:center;
@@ -3117,6 +3123,7 @@ z-index: 1;
 .asesmen__img div{
     position: absolute;
     font-weight: 800;
+    z-index: 1;
     font-size: 18px;
     line-height: 1;
     background-color: #fff;
