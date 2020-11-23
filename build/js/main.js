@@ -319,4 +319,8 @@ $(function(){
     $('.comment__btn').click(function(){
         $(this).closest('.comment').toggleClass('active').find('.comment__wrap').slideToggle()
     })
+
+    if($('.custom-select').length){
+        $('.custom-select').selectric();
+    }
 })

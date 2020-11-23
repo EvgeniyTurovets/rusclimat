@@ -5,6 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Руководитель</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <link rel='stylesheet' type='text/css' media='screen' href='./libs/selectric/selectric.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/main.min.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./css/admin.min.css'>
 </head>
@@ -154,7 +156,16 @@
                             </div>
                         </div>
                         <div class="filter-col filter-col--rating">
-                            <a href="" class="rating-link"><span class="icon-potencial"></span>Оценка потенциала</a>
+                            <select class="custom-select">
+                                <option>Оценка потенциала</option>
+                                <option>Оценка результативноти</option>
+                                <option>Оценка проф.компетенций</option>
+                                <option>Синхронный ассессмент</option>
+                                <option>Асинхронный ассессмент</option>
+                                <option>Ярмарка кандидатов</option>
+                                <option>Индивидуальный план</option>
+                            </select>
+                            <!-- <a href="" class="rating-link"><span class="icon-potencial"></span>Оценка потенциала</a> -->
                         </div>
                     </div>
                     <div class="employees-row">
@@ -712,6 +723,7 @@
 </div>
 <script src="./js/jquery-3.2.1.min.js"></script>
 <script src="./js/e-smart-zoom-jquery.js"></script>
+<script src="./libs/selectric/jquery.selectric.min.js"></script>
 <script src="./js/fancybox.min.js"></script>
 <script src="./js/main.js"></script>
 </body>

@@ -1,4 +1,51 @@
 /*admin*/
+.selectric{
+	border-radius: 10px;
+	height: 35.45px;
+	background-color: #fff;
+	padding: 0 10px 0 38px;
+}
+.selectric:after{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	content: "\e90d";
+	font-family: 'icomoon'!important;
+    speak: never;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	position: absolute;
+    left: 11px;
+    color: #006fba;
+    font-size: 20px;
+	line-height: 1;
+	transform: translateY(-50%);
+}
+.selectric .label{
+	color: #8d8d8d;
+	font-size: 15px;
+	margin: 0;
+}
+.selectric-items{
+	border-radius: 10px;
+	overflow: hidden;
+}
+.selectric-items li{
+	background-color: #fff;
+}
+.selectric-items li.selected{
+	background-color: #f6f6f6;
+}
+.selectric-items li:hover{
+	background-color: #f6f6f6;
+}
+.selectric .button{
+	display: none;
+}
 .modal-vibor__tag{
 	display: flex;
 	justify-content: center;
