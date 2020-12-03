@@ -1318,4 +1318,40 @@ a:focus, a:active, a:visited, :focus, :active, :visited, button:focus, button:vi
     .new-module__table--ocenka{
         margin-top: 55px;
     }
+    .modules-wrap .heading-section{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+    .modules-wrap .heading-section__btn .modules-link{
+        margin: 0;
+        text-align: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width: 424px){
+    .btn-blue-grad{
+        font-size: 13px;
+        line-height: 150%;
+        padding: 7px 15px 10px;
+    }
+}
+@media(max-width: 374px){
+    .module-parameters__name{
+        font-size: 14px;
+    }
+    .module-parameters{
+        padding: 15px 40px 15px 10px;
+    }
+    .module-parameters__caption{
+        top: 18px;
+        left: 15px;
+    }
+    .module-parameters__detail-info .section-info__name{
+        font-size: 13px;
+    }
+    .module-parameters__detail-info .section-info__item{
+        width: 100px;
+    }
 }
