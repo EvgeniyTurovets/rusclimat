@@ -1051,9 +1051,13 @@ a:focus, a:active, a:visited, :focus, :active, :visited, button:focus, button:vi
     font-size: 15px;
     line-height: 250%;
     color: #828282;
+    display: flex;
+    align-items: center;
 }
+
 .new-module__title span{
     margin-right: 11px;
+    font-size: 20px;
 }
 .new-module__item{
     margin-bottom: 50px;
