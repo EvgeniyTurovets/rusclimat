@@ -45,6 +45,11 @@ input{
     font-size: 14px;
     line-height: 17px;
 }
-input::placeholder{
+input::placeholder,
+textarea::placeholder{
     color: #CFCFCF;
 }
+:focus::-webkit-input-placeholder { color:transparent; }
+:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+:-ms-input-placeholder { color:transparent; } /* IE 10+ */

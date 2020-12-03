@@ -323,4 +323,39 @@ $(function(){
     if($('.custom-select').length){
         $('.custom-select').selectric();
     }
+
+    // модули
+    $('.view-users-js').click(function(){
+        $('.modal-vibor--users').addClass('active')
+    })
+    
+    $('.users-btn-more-js').click(function(){
+        $('.modal-vibor--users').addClass('users-detail')
+    })
+
+    $('.modal-baza-js').click(function(){
+        $('.modal-vibor--baza').addClass('active')
+    })
+
+    $('.baza-detail-js').click(function(){
+        $('.modal-vibor--baza').addClass('baza-detail')
+    })
+
+    $('.modal-event-js').click(function(){
+        $('.modal-vibor--route').addClass('active')
+    })
+    $('.open-parameters-js').click(function(){
+        $(this).closest('.employees-item').toggleClass('active')
+    })
+    $('.view-rater-js').click(function(){
+        $('.modal-vibor--rater').addClass('active')
+    })
+    $('.grade-modal-js').click(function(){
+        $('.modal-vibor--grade').addClass('active')
+    })
+
+    $('.edit-btn').click(function(){
+        console.log('1')
+        $(this).closest('.employees-item').toggleClass('active')
+    })
 })
